@@ -1,4 +1,4 @@
-import type { LoadPlugin } from '../load'
+import type { LoadPlugin } from '../load.js'
 
 export const fetchUrlsDefaultConfiguration = {
   limit: 20,

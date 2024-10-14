@@ -1,10 +1,10 @@
 import fs from 'node:fs'
 
-import { ERRORS } from '../../../configuration'
-import { dirname, join } from '../../../polyfills/path'
-import { isJson } from '../../isJson'
-import { isYaml } from '../../isYaml'
-import type { LoadPlugin } from '../load'
+import { ERRORS } from '../../../configuration/index.js'
+import { dirname, join } from '../../../polyfills/path.js'
+import { isJson } from '../../isJson.js'
+import { isYaml } from '../../isYaml.js'
+import type { LoadPlugin } from '../load.js'
 
 export const readFiles: () => LoadPlugin = () => {
   return {
